@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stylized Low-poly Stone Block
+* source:	https://sketchfab.com/3d-models/stylized-low-poly-stone-block-8e0ed57a0c204e938437f798f05ae57d
+* author:	Rocco Giandomenico (https://sketchfab.com/Rocco.Giandomenico)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stylized Low-poly Stone Block" (https://sketchfab.com/3d-models/stylized-low-poly-stone-block-8e0ed57a0c204e938437f798f05ae57d) by Rocco Giandomenico (https://sketchfab.com/Rocco.Giandomenico) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

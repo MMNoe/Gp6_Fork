@@ -1,33 +1,230 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/gushi/Gp6_Fork/Packages/manifest.json
+    m_FilePath: "D:/\u65B9\u8056\u4E9E/Documents/GitHub/Gp6_Fork/Packages/manifest.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639119410576761590
-    m_Hash: 1963157244
+      ticks: 639124514425419275
+    m_Hash: 2029453411
   m_LockFileStatus:
-    m_FilePath: C:/Users/gushi/Gp6_Fork/Packages/packages-lock.json
+    m_FilePath: "D:/\u65B9\u8056\u4E9E/Documents/GitHub/Gp6_Fork/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639119410576815846
-    m_Hash: 3769358423
+      ticks: 639124514425419275
+    m_Hash: 4258047615
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/gushi/Gp6_Fork/Packages
+m_ProjectPath: "D:/\u65B9\u8056\u4E9E/Documents/GitHub/Gp6_Fork/Packages"
 m_EditorVersion: 2022.3.62f3 (96770f904ca7)
 m_ResolvedPackages:
+- packageId: com.meta.xr.sdk.all@201.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.all@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.all
+  name: com.meta.xr.sdk.all
+  displayName: Meta XR All-in-One SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developers.meta.com/horizon/
+  category: 
+  type: 
+  description: Meta XR All-in-One SDK is a wrapper package that depends on the latest
+    version of all Meta XR SDKs, making it easy to get started with VR development.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 74.0.3
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 74.0.3
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.meta.xr.sdk.audio
+    version: 85.0.0
+  - name: com.meta.xr.sdk.voice
+    version: 85.0.0
+  - name: com.meta.xr.sdk.haptics
+    version: 201.0.0
+  - name: com.meta.xr.mrutilitykit
+    version: 201.0.0
+  - name: com.meta.xr.sdk.platform
+    version: 201.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 201.0.0
+  - name: com.meta.xr.sdk.interaction.ovr
+    version: 201.0.0
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  - name: com.meta.xr.sdk.audio
+    version: 85.0.0
+  - name: com.meta.xr.sdk.voice
+    version: 85.0.0
+  - name: com.meta.xr.sdk.haptics
+    version: 201.0.0
+  - name: com.meta.xr.mrutilitykit
+    version: 201.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.7
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.ai.navigation
+    version: 1.1.6
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  - name: com.meta.xr.sdk.platform
+    version: 201.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 201.0.0
+  - name: com.meta.xr.sdk.interaction.ovr
+    version: 201.0.0
+  keywords:
+  - SDK
+  - XR
+  - Meta
+  - Oculus
+  - Quest
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120297054860000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.collab-proxy@2.12.4
   testable: 0
   isDirectDependency: 1
   version: 2.12.4
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.collab-proxy@2.12.4
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.collab-proxy@2.12.4"
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -199,7 +396,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.feature.development@1.0.1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.feature.development@1.0.1"
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -293,7 +490,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.7
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.textmeshpro@3.0.7
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.textmeshpro@3.0.7"
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -498,7 +695,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.7
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.timeline@1.7.7
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.timeline@1.7.7"
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -679,7 +876,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ugui@1.0.0"
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -755,7 +952,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.4
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.visualscripting@1.9.4
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.visualscripting@1.9.4"
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -863,12 +1060,548 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
+- packageId: com.unity.xr.interaction.toolkit@2.6.5
+  testable: 0
+  isDirectDependency: 1
+  version: 2.6.5
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@2.6.5"
+  assetPath: Packages/com.unity.xr.interaction.toolkit
+  name: com.unity.xr.interaction.toolkit
+  displayName: XR Interaction Toolkit
+  author:
+    name: 
+    email: 
+    url: 
+  category: XR
+  type: 
+  description: A high-level, component-based, interaction system for creating VR
+    and AR experiences. It provides a framework that makes 3D and UI interactions
+    available from Unity input events. The core of this system is a set of base Interactor
+    and Interactable components, and an Interaction Manager that ties these two types
+    of components together. It also contains components that you can use for locomotion
+    and drawing visuals.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.6-preview
+    - 0.9.0-preview
+    - 0.9.1-preview
+    - 0.9.2-preview
+    - 0.9.3-preview
+    - 0.9.4-preview
+    - 0.10.0-preview.7
+    - 1.0.0-pre.1
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.0.0-pre.8
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0-pre.7
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.1.0-pre.1
+    - 2.1.1
+    - 2.2.0
+    - 2.3.0-pre.1
+    - 2.3.0
+    - 2.3.1
+    - 2.3.2
+    - 2.4.0-pre.1
+    - 2.4.0-pre.2
+    - 2.4.0
+    - 2.4.1
+    - 2.4.3
+    - 2.5.0
+    - 2.5.1
+    - 2.5.2
+    - 2.5.3
+    - 2.5.4
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0
+    - 3.0.1
+    - 3.0.3
+    - 3.0.4
+    - 3.0.5
+    - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
+    - 3.0.10
+    - 3.1.0-pre.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.2.0-pre.1
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    - 3.3.0-pre.1
+    - 3.3.0
+    - 3.3.1
+    - 3.4.0-pre.1
+    - 3.4.0-pre.2
+    - 3.4.0
+    - 3.4.1
+    - 3.5.0-pre.1
+    - 3.5.0-pre.2
+    - 3.5.0
+    compatible:
+    - 2.6.4
+    - 2.6.5
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0
+    - 3.0.1
+    - 3.0.3
+    - 3.0.4
+    - 3.0.5
+    - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
+    - 3.0.10
+    - 3.1.0-pre.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.2.0-pre.1
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    - 3.3.0-pre.1
+    - 3.3.0
+    - 3.3.1
+    - 3.4.0-pre.1
+    - 3.4.0-pre.2
+    - 3.4.0
+    - 3.4.1
+    - 3.5.0-pre.1
+    - 3.5.0-pre.2
+    - 3.5.0
+    recommended: 2.6.5
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.7.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.2.3
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  keywords:
+  - XR
+  - VR
+  - toolkit
+  - interaction
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638936573358900000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.6/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.xr.interaction.toolkit.git
+    revision: 48202f693b045362ccb8f67cf659ceb846cd5a9b
+    path: 
+  unityLifecycle:
+    version: 2.6.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.xr.management@4.5.4
+  testable: 0
+  isDirectDependency: 1
+  version: 4.5.4
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.management@4.5.4"
+  assetPath: Packages/com.unity.xr.management
+  name: com.unity.xr.management
+  displayName: XR Plugin Management
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Package that provides simple management of XR plug-ins. Manages and
+    offers help with loading, initialization, settings, and build support for XR
+    plug-ins.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.8
+    - 0.1.0-preview.12
+    - 1.0.0-preview.2
+    - 2.0.0-preview.3
+    - 2.0.0-preview.6
+    - 2.0.0-preview.9
+    - 2.0.0-preview.10
+    - 2.0.0-preview.13
+    - 2.0.0-preview.21
+    - 2.0.0-preview.22
+    - 2.0.0-preview.24
+    - 2.0.0-preview.25
+    - 2.0.0-preview.26
+    - 3.0.1
+    - 3.0.2-preview.1
+    - 3.0.2-preview.2
+    - 3.0.3
+    - 3.0.4-preview.1
+    - 3.0.4-preview.3
+    - 3.0.4
+    - 3.0.5-preview.1
+    - 3.0.5
+    - 3.0.6-preview.2
+    - 3.0.6
+    - 3.1.0-preview.2
+    - 3.2.4
+    - 3.2.6
+    - 3.2.7
+    - 3.2.9
+    - 3.2.10
+    - 3.2.11-preview.1
+    - 3.2.12
+    - 3.2.13
+    - 3.2.15
+    - 3.2.16
+    - 3.2.17
+    - 4.0.0-exp.2
+    - 4.0.0-pre.2
+    - 4.0.0-pre.3
+    - 4.0.1
+    - 4.0.3
+    - 4.0.5
+    - 4.0.6
+    - 4.0.7
+    - 4.1.0-pre.1
+    - 4.1.0-pre.2
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
+    - 4.3.1
+    - 4.3.3
+    - 4.4.0
+    - 4.4.1
+    - 4.5.0
+    - 4.5.1
+    - 4.5.2
+    - 4.5.3
+    - 4.5.4
+    - 4.6.0
+    compatible:
+    - 4.4.0
+    - 4.4.1
+    - 4.5.0
+    - 4.5.1
+    - 4.5.2
+    - 4.5.3
+    - 4.5.4
+    - 4.6.0
+    recommended: 4.5.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.2.1
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.11
+  resolvedDependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  keywords:
+  - xr
+  - sdk
+  - ar
+  - vr
+  - management
+  - build
+  - plugin
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639017809809290000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.management@4.5/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
+    revision: bc4c0079c6af1f1261e7ff475df4eda9875a72a0
+    path: 
+  unityLifecycle:
+    version: 4.4.0
+    nextVersion: 
+    recommendedVersion: 4.5.0
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.xr.oculus@4.5.4
+  testable: 0
+  isDirectDependency: 1
+  version: 4.5.4
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.oculus@4.5.4"
+  assetPath: Packages/com.unity.xr.oculus
+  name: com.unity.xr.oculus
+  displayName: Oculus XR Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Provides display and input support for Oculus devices.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.9-preview
+    - 0.1.2-preview.1
+    - 0.8.4-preview
+    - 1.0.0-preview.4
+    - 1.0.0
+    - 1.0.2
+    - 1.0.3-preview.1
+    - 1.1.0-preview
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2-preview
+    - 1.1.2
+    - 1.1.3-preview
+    - 1.1.3-preview.1
+    - 1.1.4-preview
+    - 1.1.4-preview.1
+    - 1.1.4
+    - 1.1.5-preview
+    - 1.1.5
+    - 1.2.0-preview.1
+    - 1.2.0
+    - 1.3.1
+    - 1.3.3
+    - 1.3.4
+    - 1.4.0-preview.1
+    - 1.4.0-preview.2
+    - 1.4.0
+    - 1.4.3
+    - 1.5.0
+    - 1.5.1
+    - 1.6.0-preview.1
+    - 1.6.0-preview.2
+    - 1.6.1
+    - 1.7.0-preview.1
+    - 1.7.0-preview.2
+    - 1.7.0
+    - 1.8.1
+    - 1.9.0-preview.1
+    - 1.9.0
+    - 1.9.1
+    - 1.10.0-preview.1
+    - 1.10.0-preview.2
+    - 1.10.0
+    - 1.10.1-preview.3
+    - 1.11.0
+    - 1.11.2
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+    - 1.13.1-preview.1
+    - 1.13.1-preview.2
+    - 1.13.1
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.2-preview.1
+    - 2.2.0-preview.1
+    - 2.2.3-preview.1
+    - 2.2.3-preview.2
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0-pre.4
+    - 3.0.0
+    - 3.0.1
+    - 3.0.2
+    - 3.1.1
+    - 3.2.1
+    - 3.2.2-pre.1
+    - 3.2.2
+    - 3.2.3-pre.1
+    - 3.2.3
+    - 3.3.0
+    - 3.4.0
+    - 3.4.1
+    - 4.0.0
+    - 4.1.1
+    - 4.1.2
+    - 4.2.0-exp-env-depth.1
+    - 4.2.0-exp-env-depth.2
+    - 4.2.0
+    - 4.3.0-pre.1
+    - 4.3.0
+    - 4.4.0
+    - 4.5.0
+    - 4.5.1
+    - 4.5.2
+    - 4.5.4
+    compatible:
+    - 4.5.1
+    - 4.5.2
+    - 4.5.4
+    recommended: 4.5.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.xr.management
+    version: 4.4.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
+  keywords:
+  - oculus
+  - xr
+  - vr
+  - virtual
+  - rift
+  - quest
+  - xreditorsubsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639069887050660000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.oculus@4.5/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.oculus.git
+    revision: 2fe6646feef794b539bd6412468fed6cacb884ba
+    path: 
+  unityLifecycle:
+    version: 4.5.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.ai@1.0.0"
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -924,7 +1657,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.androidjni@1.0.0"
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -979,7 +1712,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.animation@1.0.0"
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1035,7 +1768,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.assetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1091,7 +1824,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.audio@1.0.0"
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1147,7 +1880,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.cloth@1.0.0"
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1207,7 +1940,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.director@1.0.0"
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1271,7 +2004,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.imageconversion@1.0.0"
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1328,7 +2061,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.imgui@1.0.0"
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1384,7 +2117,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.jsonserialize@1.0.0"
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1440,7 +2173,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.particlesystem@1.0.0"
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1496,7 +2229,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.physics@1.0.0"
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1552,7 +2285,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.physics2d@1.0.0"
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1608,7 +2341,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.screencapture@1.0.0"
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1668,7 +2401,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.terrain@1.0.0"
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1724,7 +2457,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.terrainphysics@1.0.0"
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1788,7 +2521,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.tilemap@1.0.0"
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1847,7 +2580,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.ui@1.0.0"
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -1903,7 +2636,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.uielements@1.0.0"
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -1971,7 +2704,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.umbra@1.0.0"
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2027,7 +2760,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unityanalytics@1.0.0"
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2091,7 +2824,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unitywebrequest@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2147,7 +2880,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2211,7 +2944,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2275,7 +3008,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2339,7 +3072,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2419,7 +3152,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.vehicles@1.0.0"
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2479,7 +3212,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.video@1.0.0"
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2547,7 +3280,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.vr@1.0.0"
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2617,7 +3350,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.wind@1.0.0"
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2673,7 +3406,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.xr@1.0.0"
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2741,7 +3474,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.modules.subsystems@1.0.0"
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2796,12 +3529,455 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
+- packageId: com.unity.xr.core-utils@2.5.2
+  testable: 0
+  isDirectDependency: 0
+  version: 2.5.2
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.core-utils@2.5.2"
+  assetPath: Packages/com.unity.xr.core-utils
+  name: com.unity.xr.core-utils
+  displayName: XR Core Utilities
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Common utility classes for XR projects\nRefer to API documentation
+    for details. Some particularly useful utilities include:\n\u25AA Geometry Utilities\n 
+    \u25AA Point of closest approach\n  \u25AA Closest edge of a polygon\n  \u25AA
+    Check if point inside of polygon\n  \u25AA Compute 2D convex hull\n\u25AA Collection
+    pool\n\u25AA Math Utilities\n  \u25AA Bounds extensions\n  \u25AA Quaternion
+    extensions\n\u25AA Editor GUI\n  \u25AA Flags Property Drawer\n\u25AA Scriptable
+    Settings (serialized project settings)\n\u25AA Conditional Compilation Utility\n\u25AA
+    XR Origin Implementation"
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.0.0-pre.3
+    - 2.0.0-pre.5
+    - 2.0.0-pre.6
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0-pre.1
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0-pre.1
+    - 2.2.0-pre.2
+    - 2.2.0
+    - 2.2.1
+    - 2.2.2
+    - 2.2.3
+    - 2.3.0-pre.1
+    - 2.3.0-pre.2
+    - 2.3.0-pre.3
+    - 2.3.0
+    - 2.4.0-exp.1
+    - 2.4.0-exp.2
+    - 2.4.0-exp.3
+    - 2.4.0
+    - 2.5.0
+    - 2.5.1
+    - 2.5.2
+    - 2.5.3
+    - 2.6.0-pre.1
+    - 2.6.0-pre.2
+    - 2.6.0
+    compatible:
+    - 2.5.2
+    - 2.5.3
+    - 2.6.0-pre.1
+    - 2.6.0-pre.2
+    - 2.6.0
+    recommended: 2.5.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  keywords:
+  - xr
+  - ar
+  - augmented
+  - reality
+  - utility
+  - utilities
+  - core
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638778451955920000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.core-utils@2.5/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.core-utils.git
+    revision: fd1180d6886681f2344f96d747dae3d9dd262a23
+    path: 
+  unityLifecycle:
+    version: 2.5.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.xr.legacyinputhelpers@2.1.12
+  testable: 0
+  isDirectDependency: 0
+  version: 2.1.12
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@2.1.12"
+  assetPath: Packages/com.unity.xr.legacyinputhelpers
+  name: com.unity.xr.legacyinputhelpers
+  displayName: XR Legacy Input Helpers
+  author:
+    name: 
+    email: 
+    url: 
+  category: XR
+  type: 
+  description: This package includes the tracked pose driver for the legacy input
+    system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+    Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
+    track input devices, the XR Bindings Seeding Tool adds a menu item under the
+    'Assets' menu which populates the Input Asset with Unity's crossplatform Input
+    Bindings
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    - 1.0.2
+    - 1.0.3
+    - 1.3.1
+    - 1.3.2
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.3.8
+    - 1.3.11
+    - 2.0.1
+    - 2.0.2
+    - 2.0.4
+    - 2.0.6
+    - 2.0.8
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.6
+    - 2.1.7
+    - 2.1.8
+    - 2.1.9
+    - 2.1.10
+    - 2.1.11
+    - 2.1.12
+    - 2.1.13
+    - 3.0.0
+    - 3.0.1
+    compatible:
+    - 2.1.12
+    - 2.1.13
+    - 3.0.0
+    - 3.0.1
+    recommended: 2.1.13
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  keywords:
+  - TPD
+  - Tracked Pose Driver
+  - XR
+  - Input
+  - Helpers
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638738251595540000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.legacyinputhelpers.git
+    revision: 7750ba101d791f0c673ae87cd654d1ac84f87f24
+    path: 
+  unityLifecycle:
+    version: 2.1.12
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.inputsystem@1.14.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.14.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.inputsystem@1.14.0"
+  assetPath: Packages/com.unity.inputsystem
+  name: com.unity.inputsystem
+  displayName: Input System
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A new input system which can be used as a more extensible and customizable
+    alternative to Unity's classic input system in UnityEngine.Input.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.2-preview
+    - 0.2.0-preview
+    - 0.2.1-preview
+    - 0.2.6-preview
+    - 0.2.8-preview
+    - 0.2.10-preview
+    - 0.9.0-preview
+    - 0.9.1-preview
+    - 0.9.2-preview
+    - 0.9.3-preview
+    - 0.9.4-preview
+    - 0.9.5-preview
+    - 0.9.6-preview
+    - 1.0.0-preview
+    - 1.0.0-preview.1
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.0-preview.5
+    - 1.0.0-preview.6
+    - 1.0.0-preview.7
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.1.0-pre.5
+    - 1.1.0-pre.6
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.1
+    - 1.2.0
+    - 1.3.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.1
+    - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
+    - 1.13.0
+    - 1.13.1
+    - 1.14.0
+    - 1.14.1
+    - 1.14.2
+    - 1.15.0
+    - 1.16.0
+    - 1.17.0
+    - 1.18.0
+    - 1.19.0
+    compatible:
+    - 1.14.0
+    - 1.14.1
+    - 1.14.2
+    - 1.15.0
+    - 1.16.0
+    - 1.17.0
+    - 1.18.0
+    - 1.19.0
+    recommended: 1.14.2
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - input
+  - events
+  - keyboard
+  - mouse
+  - gamepad
+  - touch
+  - vr
+  - xr
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638780752796560000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/InputSystem.git
+    revision: 5ac6cb14e03a4e4e5faf7bd8fbd915105ae3ff55
+    path: 
+  unityLifecycle:
+    version: 1.14.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.mathematics@1.2.6
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.6
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.mathematics@1.2.6"
+  assetPath: Packages/com.unity.mathematics
+  name: com.unity.mathematics
+  displayName: Mathematics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Unity's C# SIMD math library providing vector types and math functions
+    with a shader like syntax.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
+    - 1.2.1
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    compatible:
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    recommended: 1.2.6
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637841876140000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: f110c8c230d253654afed153569030a587cc7557
+    path: 
+  unityLifecycle:
+    version: 1.2.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 0
   version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22"
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -2899,7 +4075,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.36
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.ide.rider@3.0.36
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ide.rider@3.0.36"
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3014,7 +4190,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.5
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ide.vscode@1.2.5"
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -3083,7 +4259,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.editorcoroutines@1.0.0"
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3153,7 +4329,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.3
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.3
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.performance.profile-analyzer@1.2.3"
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3238,7 +4414,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.1.33
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.test-framework@1.1.33
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.test-framework@1.1.33"
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3380,7 +4556,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.testtools.codecoverage@1.2.6
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6"
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3486,12 +4662,1132 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
+- packageId: com.meta.xr.sdk.core@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.core@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.core
+  name: com.meta.xr.sdk.core
+  displayName: Meta XR Core SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developers.meta.com/horizon/
+  category: 
+  type: 
+  description: Meta XR Core SDK package provides the latest features to create immersive
+    experiences for Meta XR devices.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 68.0.3
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 68.0.3
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  keywords:
+  - Oculus
+  - Quest
+  - XR
+  - SDK
+  - Utilities
+  - Meta
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120292785780000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.audio@85.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 85.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.audio@85.0.0"
+  assetPath: Packages/com.meta.xr.sdk.audio
+  name: com.meta.xr.sdk.audio
+  displayName: Meta XR Audio SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: 
+  description: Comprehensive spatial audio features for immersive applications, including
+    a spatial audio renderer with HRTF, ambisonic audio playback, and room acoustics
+    for creating immersive environments.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 69.0.0
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 69.0.0
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - Quest
+  - Meta
+  - SDK
+  - XR
+  - Audio
+  - Oculus
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639065794042790000
+  documentationUrl: https://developer.oculus.com/documentation/unity/meta-xr-audio-sdk-unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.voice@85.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 85.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.voice@85.0.0"
+  assetPath: Packages/com.meta.xr.sdk.voice
+  name: com.meta.xr.sdk.voice
+  displayName: Meta - Voice SDK - Immersive Voice Commands
+  author:
+    name: Meta - Voice SDK
+    email: 
+    url: https://wit.ai
+  category: 
+  type: 
+  description: Voice SDK enables natural voice interactions for AR/VR apps, powered
+    by Wit.ai.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 69.0.0
+    - 71.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 69.0.0
+    - 71.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - SDK
+  - Voice
+  - Meta
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639065794750380000
+  documentationUrl: https://developer.oculus.com/documentation/unity/voice-sdk-overview/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.haptics@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.haptics@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.haptics
+  name: com.meta.xr.sdk.haptics
+  displayName: Meta XR Haptics SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developers.meta.com/horizon/
+  category: 
+  type: 
+  description: SDK for playback of haptics created in Meta Haptics Studio on Quest
+    devices
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  keywords:
+  - Oculus
+  - Quest
+  - Meta
+  - Haptics
+  - XR
+  - SDK
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120295926040000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-haptics-sdk/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.mrutilitykit@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.mrutilitykit@201.0.0"
+  assetPath: Packages/com.meta.xr.mrutilitykit
+  name: com.meta.xr.mrutilitykit
+  displayName: Meta MR Utility Kit
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: 
+  description: Helper tools & functions to simplify development with Scene API. Works
+    on Mac & PC, without a device attached.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
+  - name: com.unity.ai.navigation
+    version: 1.1.4
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.7
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.ai.navigation
+    version: 1.1.6
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  keywords:
+  - Meta
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120296793450000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-mr-utility-kit-overview
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.platform@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.platform@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.platform
+  name: com.meta.xr.sdk.platform
+  displayName: Meta XR Platform SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developers.meta.com/horizon/
+  category: 
+  type: 
+  description: Use the Platform SDK to create social VR applications. Add Matchmaking,
+    DLC, In-App Purchases, Cloud Storage, and more to your experience using the individual
+    components of the SDK.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 69.0.0
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 69.0.0
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 76.0.0
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.7.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - Meta
+  - Platform
+  - SDK
+  - Oculus
+  - XR
+  - Quest
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120293720180000
+  documentationUrl: https://developer.oculus.com/documentation/unity/ps-platform-intro/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.interaction@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.interaction@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.interaction
+  name: com.meta.xr.sdk.interaction
+  displayName: Meta XR Interaction SDK Essentials
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: 
+  description: Provides the core implementations of all the provided interaction
+    models along with necessary shaders, materials, and prefabs.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.0
+    - 69.0.1
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.7
+  keywords:
+  - Interaction
+  - Oculus
+  - Quest
+  - SDK
+  - XR
+  - Meta
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120294937900000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.meta.xr.sdk.interaction.ovr@201.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 201.0.0
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@201.0.0"
+  assetPath: Packages/com.meta.xr.sdk.interaction.ovr
+  name: com.meta.xr.sdk.interaction.ovr
+  displayName: "Meta XR Interaction \u200BSDK"
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: 
+  description: This package allows Interaction SDK to interface with OVRPlugin. Use
+    this package if you are using OVRPlugin or the Core SDK package.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.1
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.1
+    - 69.0.2
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 74.0.3
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.1
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    - 69.0.1
+    - 69.0.2
+    - 71.0.0
+    - 72.0.0
+    - 74.0.0
+    - 74.0.1
+    - 74.0.2
+    - 74.0.3
+    - 76.0.0
+    - 76.0.1
+    - 77.0.0
+    - 78.0.0
+    - 81.0.0
+    - 83.0.0
+    - 83.0.1
+    - 83.0.3
+    - 83.0.4
+    - 85.0.0
+    - 201.0.0
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 201.0.0
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 201.0.0
+  - name: com.unity.xr.hands
+    version: 1.7.2
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 201.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.7
+  keywords:
+  - OVR
+  - Meta
+  - XR
+  - SDK
+  - Oculus
+  - Interaction
+  - Quest
+  - Samples
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 639120295521490000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.settings-manager@2.1.0
   testable: 0
   isDirectDependency: 0
   version: 2.1.0
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.settings-manager@2.1.0
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.settings-manager@2.1.0"
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -3557,7 +5853,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: C:\Users\gushi\Gp6_Fork\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6"
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3618,6 +5914,341 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.ai.navigation@1.1.6
+  testable: 0
+  isDirectDependency: 0
+  version: 1.1.6
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.ai.navigation@1.1.6"
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    - 1.1.3
+    - 1.1.4
+    - 1.1.5
+    - 1.1.6
+    - 1.1.7
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.8
+    - 2.0.9
+    - 2.0.10
+    - 2.0.11
+    - 2.0.12
+    compatible:
+    - 1.1.6
+    - 1.1.7
+    recommended: 1.1.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords:
+  - carving
+  - mesh
+  - navigation
+  - navmesh
+  - NavMesh
+  - navmesh agent
+  - navmesh link
+  - navmeshlink
+  - navmesh modifier
+  - navmeshmodifier
+  - navmesh modifier volume
+  - navmeshmodifiervolume
+  - navmesh obstacle
+  - navmesh surface
+  - navmeshsurface
+  - offmesh link
+  - off-mesh link
+  - pathfinding
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638804054560000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: f6af42e7acca43eff2b426b1afd4925248486b1d
+    path: 
+  unityLifecycle:
+    version: 1.1.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.2.1
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1"
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    compatible:
+    - 3.2.1
+    - 3.2.2
+    recommended: 3.2.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638186318800000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
+- packageId: com.unity.xr.hands@1.7.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.7.2
+  source: 1
+  resolvedPath: "D:\\\u65B9\u8056\u4E9E\\Documents\\GitHub\\Gp6_Fork\\Library\\PackageCache\\com.unity.xr.hands@1.7.2"
+  assetPath: Packages/com.unity.xr.hands
+  name: com.unity.xr.hands
+  displayName: XR Hands
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Surfaces the cross-platform subsystem API for hand-tracking. Implementations
+    of providers will be found in the package for that platform.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-pre.2
+    - 1.1.0-pre.2
+    - 1.1.0-pre.3
+    - 1.1.0
+    - 1.2.0
+    - 1.2.1
+    - 1.3.0
+    - 1.4.0-pre.1
+    - 1.4.0
+    - 1.4.1
+    - 1.4.3
+    - 1.5.0-pre.1
+    - 1.5.0-pre.3
+    - 1.5.0-pre.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.0-pre.1
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.6.0
+    - 1.6.1
+    - 1.6.2
+    - 1.6.3
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.8.0-pre.1
+    - 1.8.0
+    compatible:
+    - 1.4.0
+    - 1.4.1
+    - 1.4.3
+    - 1.5.0-pre.1
+    - 1.5.0-pre.3
+    - 1.5.0-pre.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.0-pre.1
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.6.0
+    - 1.6.1
+    - 1.6.2
+    - 1.6.3
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.8.0-pre.1
+    - 1.8.0
+    recommended: 1.4.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.3.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.2.0
+  - name: com.unity.xr.management
+    version: 4.0.1
+  resolvedDependencies:
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.inputsystem
+    version: 1.14.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.xr.core-utils
+    version: 2.5.2
+  - name: com.unity.xr.management
+    version: 4.5.4
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.12
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  keywords:
+  - xr
+  - vr
+  - virtual
+  - reality
+  - hand
+  - tracking
+  - hands
+  - subsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639002929847170000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.hands@1.7/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.xr.hands.git
+    revision: 3e401c04779feb43ff8067da8a77474bdbc37d94
+    path: 
+  unityLifecycle:
+    version: 1.4.0
+    nextVersion: 1.5.0-pre.1
     recommendedVersion: 
     isDeprecated: 0
     deprecationMessage: 

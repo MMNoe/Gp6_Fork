@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone Stair
+* source:	https://sketchfab.com/3d-models/stone-stair-b6dc2519c4ff4add980bb81150b6f739
+* author:	KThies (https://sketchfab.com/Dondougo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone Stair" (https://sketchfab.com/3d-models/stone-stair-b6dc2519c4ff4add980bb81150b6f739) by KThies (https://sketchfab.com/Dondougo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

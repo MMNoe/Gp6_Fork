@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stone wall
+* source:	https://sketchfab.com/3d-models/stone-wall-0788f8b362a6463fa08ad75273c530ea
+* author:	Stefan William Rudebjer (https://sketchfab.com/stefan_wr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stone wall" (https://sketchfab.com/3d-models/stone-wall-0788f8b362a6463fa08ad75273c530ea) by Stefan William Rudebjer (https://sketchfab.com/stefan_wr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
