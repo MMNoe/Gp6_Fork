@@ -72,11 +72,11 @@ public class UrsulaBossManager : MonoBehaviour
             playerInputSequence.Clear();
 
             float timer = 0;
-            
-            while (isDefenseWindow && timer < 20f) {
-                SetAllAnimations("doSpell");
+            SetAllAnimations("doSpell");
+            while (isDefenseWindow && timer < 1f) {
                 timer += Time.deltaTime;
                 yield return null;
+                Debug.Log("正在唱");
             }
             
 
