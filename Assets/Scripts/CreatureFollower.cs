@@ -24,11 +24,24 @@ public class CreatureFollower : MonoBehaviour
     // Shared registry — no FindObjectsOfType needed every frame
     private static readonly List<CreatureFollower> _all = new();
 
+    public static List<CreatureFollower> GetActiveFollowers()
+    {
+        var result = new List<CreatureFollower>();
+        foreach (var c in _all)
+            if (c != null && c.shouldFollow) result.Add(c);
+        return result;
+    }
+
     private Transform _player;
     private Vector3   _driftCenter;
     private float     _driftAngle;
     private Animator  _animator;
     private bool      _animPlayed;
+
+    // Lineup state
+    private bool    _liningUp;
+    private Vector3 _lineupTarget;
+    private Vector3 _lineupFacing;
 
     public bool ShouldFollow
     {
@@ -57,12 +70,14 @@ public class CreatureFollower : MonoBehaviour
             _animator.Play(swimStateName);
         }
 
-        if (shouldFollow)
+        if (_liningUp)
+            MoveToLineup();
+        else if (shouldFollow)
             Follow();
         else
             IdleDrift();
 
-        Separate();
+        if (!_liningUp) Separate();
     }
 
     private void Follow()
@@ -92,6 +107,24 @@ public class CreatureFollower : MonoBehaviour
         Vector3 dir = target - transform.position;
         if (dir.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 2f * Time.deltaTime);
+    }
+
+    public void LineUpAt(Vector3 targetPos, Vector3 facingDir)
+    {
+        _lineupTarget = targetPos;
+        _lineupFacing = facingDir;
+        _liningUp     = true;
+    }
+
+    private void MoveToLineup()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _lineupTarget, moveSpeed * 1.5f * Time.deltaTime);
+
+        if (_lineupFacing.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRot = Quaternion.LookRotation(_lineupFacing);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
+        }
     }
 
     // Push away from any other CreatureFollower that is too close
