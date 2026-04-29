@@ -56,6 +56,7 @@ public class UrsulaBossManager : MonoBehaviour
     IEnumerator BossLoop() {
         while (bossHP > 0) {
             // State 0: 初始
+            Debug.Log("烏蘇拉開始唱歌...");
             SetAllAnimations("doIdle");
             yield return new WaitForSeconds(2f);
 
@@ -73,7 +74,7 @@ public class UrsulaBossManager : MonoBehaviour
 
             float timer = 0;
             SetAllAnimations("doSpell");
-            while (isDefenseWindow && timer < 1f) {
+            while (isDefenseWindow && timer < 3f) {
                 timer += Time.deltaTime;
                 yield return null;
                 Debug.Log("正在唱");
