@@ -51,6 +51,10 @@ public class ItemTuningFork : TuningForkBase
         if (Time.time - _lastHitTime < hitCooldown) return;
         if (OVRInput.GetLocalControllerVelocity(HeldByController).magnitude < hitVelocityThreshold) return;
 
+        // Left hand (angel fork) cannot open chests
+        if (HeldByController == OVRInput.Controller.LTouch &&
+            other.GetComponentInParent<ChestInteractable>() != null) return;
+
         _lastHitTime = Time.time;
         _audioSource.PlayOneShot(_audioSource.clip);
         StartCoroutine(HapticRoutine());
