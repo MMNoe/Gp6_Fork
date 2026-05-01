@@ -19,9 +19,13 @@ public class UrsulaBossManager : MonoBehaviour
 
     [Header("音效設定")]
     public AudioSource bossAudioSource;
-    public AudioClip singingSound;   
-    public AudioClip realUrsulaSound; 
-    public AudioClip fakeUrsulaSound; 
+    public AudioClip singingSound;
+    public AudioClip realUrsulaSound;
+    public AudioClip fakeUrsulaSound;
+
+    [Header("粒子效果")]
+    public ParticleSystem realHitParticle;  // child of realUrsula — drag here
+    public ParticleSystem fakeHitParticle;  // child of fakeUrsula — drag here
 
     [Header("防禦機制")]
     public List<int> correctSequence = new List<int> { 0, 1, 2 }; 
@@ -51,6 +55,7 @@ public class UrsulaBossManager : MonoBehaviour
         if (detector == null) detector = obj.AddComponent<UrsulaHitDetector>();
         detector.isReal = isReal;
         detector.manager = this;
+        detector.hitParticle = isReal ? realHitParticle : fakeHitParticle;
     }
 
     IEnumerator BossLoop() {
@@ -223,12 +228,14 @@ public class UrsulaBossManager : MonoBehaviour
 public class UrsulaHitDetector : MonoBehaviour {
     public bool isReal;
     public UrsulaBossManager manager;
+    public ParticleSystem hitParticle;  // set by UrsulaBossManager.SetupHitDetection
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("fork")) {
             manager.OnIdentifyHit(isReal);
         }
         else if (other.CompareTag("angelfork")) {
+            if (hitParticle != null) hitParticle.Play();
             manager.OnBossAttacked(isReal);
         }
     }
