@@ -15,6 +15,9 @@ public class OctopusController : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip hitSound;
 
+    [Header("VFX")]
+    [SerializeField] private ParticleSystem hitParticle;
+
     private CreatureFollower _follower;
     private AudioSource      _audio;
     private bool             _hit;
@@ -23,6 +26,15 @@ public class OctopusController : MonoBehaviour
     {
         _follower = GetComponent<CreatureFollower>();
         _audio    = GetComponent<AudioSource>();
+    }
+
+    public void ForceActivate()
+    {
+        if (_hit) return;
+        _hit = true;
+        if (octopusType == OctopusType.Follower)
+            _follower.ShouldFollow = true;
+        // Disappear type: just mark hit so it can't re-trigger
     }
 
     void OnTriggerEnter(Collider other)
@@ -42,6 +54,7 @@ public class OctopusController : MonoBehaviour
         foreach (Renderer r in GetComponentsInChildren<Renderer>())
             r.material.color = hitColor;
 
+        if (hitParticle != null) hitParticle.Play();
         if (_audio != null && hitSound != null)
             _audio.PlayOneShot(hitSound);
 

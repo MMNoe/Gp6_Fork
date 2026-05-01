@@ -31,6 +31,14 @@ public class ChestInteractable : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
+    public void ForceOpen()
+    {
+        if (_opened) return;
+        _opened = true;
+        _animator.Play("Open", 0, 0f);
+        StartCoroutine(SpawnCreatures());
+    }
+
     public void RegisterHit()
     {
         if (_opened) return;

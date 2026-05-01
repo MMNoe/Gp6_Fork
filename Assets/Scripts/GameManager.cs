@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public List<AudioClip> sceneBGMs;
 
     [Header("玩家數值")]
-    public int maxHealth = 3;
+    public int maxHealth = 30;
     public int currentHealth;
 
     [Header("場景設定")]

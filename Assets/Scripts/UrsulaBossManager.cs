@@ -64,8 +64,13 @@ public class UrsulaBossManager : MonoBehaviour
     }
 
     void SetupHitDetection(GameObject obj, bool isReal) {
+        if (obj == null) { Debug.LogError($"SetupHitDetection: obj is null (isReal={isReal})"); return; }
+        Debug.Log($"SetupHitDetection on: {obj.name} (isReal={isReal})");
+
         var detector = obj.GetComponent<UrsulaHitDetector>();
         if (detector == null) detector = obj.AddComponent<UrsulaHitDetector>();
+        Debug.Log($"UrsulaHitDetector added to: {detector.gameObject.name}");
+
         detector.isReal = isReal;
         detector.manager = this;
         detector.hitParticle = isReal ? realHitParticle : fakeHitParticle;
@@ -333,17 +338,21 @@ public class UrsulaBossManager : MonoBehaviour
 
 
 public class UrsulaHitDetector : MonoBehaviour {
+    
     public bool isReal;
     public UrsulaBossManager manager;
     public ParticleSystem hitParticle;  // set by UrsulaBossManager.SetupHitDetection
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("有了 ");
         if (other.CompareTag("fork")) {
             manager.OnIdentifyHit(isReal);
+            Debug.Log("被打了");
         }
         else if (other.CompareTag("angelfork")) {
             if (hitParticle != null) hitParticle.Play();
             manager.OnBossAttacked(isReal);
+            Debug.Log("被天使打了");
         }
     }
 }
