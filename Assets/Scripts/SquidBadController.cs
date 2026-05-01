@@ -34,7 +34,12 @@ public class SquidBadController : MonoBehaviour
 
     void Awake()
     {
-        _renderers = GetComponentsInChildren<Renderer>();
+        // Exclude ParticleSystemRenderer so the nested particle system's
+        // material is not overwritten when the squid material swaps.
+        _renderers = System.Array.FindAll(
+            GetComponentsInChildren<Renderer>(),
+            r => r is not ParticleSystemRenderer
+        );
     }
 
     // --- VR trigger detection ---
