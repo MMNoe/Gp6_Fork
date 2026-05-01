@@ -32,8 +32,15 @@ public class UrsulaBossManager : MonoBehaviour
     public bool isCooldown = false;  
 
     [Header("移動設定")]
-    public float moveSpeed = 2.0f;     
+    public float moveSpeed = 2.0f; 
 
+    [Header("勝利後設定")]
+    public GameObject cage; 
+    public GameObject prince; 
+    public string princeKissTrigger = "doKiss"; 
+    public GameObject princeFish;
+    public GameObject princeHuman;
+     
     void Awake() { Instance = this; }
 
     void Start() {
@@ -72,6 +79,7 @@ public class UrsulaBossManager : MonoBehaviour
             isDefenseWindow = true;
             playerInputSequence.Clear();
 
+            // 秒數要改成她唱多久！
             float timer = 0;
             SetAllAnimations("doSpell");
             while (isDefenseWindow && timer < 3f) {
@@ -107,6 +115,7 @@ public class UrsulaBossManager : MonoBehaviour
             // State 4: 若 HP>0 回 State 0
         }
         Debug.Log("Boss 戰結束！");
+        yield return StartCoroutine(HandleVictorySequence());
     }
 
 
@@ -218,7 +227,61 @@ public class UrsulaBossManager : MonoBehaviour
         // realUrsula.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
         // fakeUrsula.transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
     }
-}
+
+    IEnumerator HandleVictorySequence() {
+        Debug.Log("戰鬥結束，進入勝利序列！");
+
+        realUrsula.SetActive(false);
+        fakeUrsula.SetActive(false);
+
+        if (cage != null) {
+            cage.SetActive(false); 
+            Debug.Log("籠子已打開！");
+        }
+
+        if (princeFish != null && princeHuman != null) {
+        
+            yield return new WaitForSeconds(0.5f); 
+            
+            princeFish.SetActive(false);
+            princeHuman.SetActive(true); 
+            
+            Debug.Log("王子變回人類了！");
+        }
+
+        yield return new WaitForSeconds(1.0f);
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (princeHuman != null && player != null) {
+            // 這裡要對 princeHuman 做 LookAt 邏輯
+            yield return StartCoroutine(RotateTowardsPlayer(princeHuman, player.transform));
+        }
+
+   
+        Animator humanAnim = princeHuman.GetComponent<Animator>();
+        if (humanAnim != null) {
+            humanAnim.SetTrigger("doKiss");
+        }
+    }   
+
+    IEnumerator RotateTowardsPlayer(GameObject actor, Transform target) {
+        float duration = 1.0f;
+        float elapsed = 0;
+        Quaternion startRot = actor.transform.rotation;
+        
+        Vector3 dir = target.position - actor.transform.position;
+        dir.y = 0;
+        Quaternion endRot = Quaternion.LookRotation(dir);
+
+        while (elapsed < duration) {
+            actor.transform.rotation = Quaternion.Slerp(startRot, endRot, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        actor.transform.rotation = endRot;
+    }
+ }
+
 
 public class UrsulaHitDetector : MonoBehaviour {
     public bool isReal;

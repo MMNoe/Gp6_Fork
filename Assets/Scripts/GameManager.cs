@@ -1,9 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [Header("音效設定")]
+    public AudioSource bgmSource; 
+    public List<AudioClip> sceneBGMs;
 
     [Header("玩家數值")]
     public int maxHealth = 3;
@@ -23,6 +28,9 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+            bgmSource = GetComponent<AudioSource>();
+            if (bgmSource == null) bgmSource = gameObject.AddComponent<AudioSource>();
+            bgmSource.loop = true;
         }
         else
         {
@@ -38,14 +46,25 @@ public class GameManager : MonoBehaviour
     // 每一關載入後自動執行
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // 1. 定位玩家
         PositionPlayerAtStart();
 
-        // 2. 尋找當前場景的 UI 控制器並初始化
         healthUI = FindObjectOfType<HealthUIController>();
         if (healthUI != null)
         {
             healthUI.UpdateHealthDisplay(currentHealth);
+        }
+        PlaySceneBGM(scene.buildIndex);
+    }
+
+    void PlaySceneBGM(int index)
+    {
+        if (index < sceneBGMs.Count && sceneBGMs[index] != null)
+        {
+            if (bgmSource.clip == sceneBGMs[index]) return;
+
+            bgmSource.clip = sceneBGMs[index];
+            bgmSource.Play();
+            Debug.Log($"正在播放場景 {index} 的 BGM: {sceneBGMs[index].name}");
         }
     }
 
