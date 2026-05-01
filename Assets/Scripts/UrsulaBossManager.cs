@@ -23,9 +23,15 @@ public class UrsulaBossManager : MonoBehaviour
     public AudioClip realUrsulaSound;
     public AudioClip fakeUrsulaSound;
 
-    [Header("粒子效果")]
-    public ParticleSystem realHitParticle;  // child of realUrsula — drag here
-    public ParticleSystem fakeHitParticle;  // child of fakeUrsula — drag here
+    [Header("粒子效果 — 真烏蘇拉")]
+    public ParticleSystem realHitParticle;    // 真烏蘇扣血
+    public ParticleSystem realWindParticle;   // 真烏蘇旋風（朝向玩家，自動旋轉）
+    public ParticleSystem realSpellParticle;  // 真烏蘇發威（位置旋轉綁定烏蘇拉）
+
+    [Header("粒子效果 — 假烏蘇拉")]
+    public ParticleSystem fakeHitParticle;    // 假蘇拉扣血
+    public ParticleSystem fakeWindParticle;   // 假蘇拉旋風（朝向玩家，自動旋轉）
+    public ParticleSystem fakeSpellParticle;  // 假蘇拉發威（位置旋轉綁定烏蘇拉）
 
     [Header("防禦機制")]
     public List<int> correctSequence = new List<int> { 0, 1, 2 }; 
@@ -87,13 +93,14 @@ public class UrsulaBossManager : MonoBehaviour
             // 秒數要改成她唱多久！
             float timer = 0;
             SetAllAnimations("doSpell");
+            StartSpellEffect();
             while (isDefenseWindow && timer < 3f) {
                 timer += Time.deltaTime;
                 yield return null;
                 Debug.Log("正在唱");
             }
-            
 
+            StopSpellEffect();
             if (isDefenseWindow) {
                 DefenseFailed(); // 時間內沒打
             }
@@ -209,6 +216,43 @@ public class UrsulaBossManager : MonoBehaviour
             Debug.Log("打中分身！玩家扣血");
         }
         isCooldown = false; 
+    }
+
+    // --- 施法特效 ---
+
+    // Public so TestBossSpellButton can call it directly.
+    // In the real scene this is called automatically by BossLoop.
+    public void StartSpellEffect() {
+        // Falls back to the main camera when no Player-tagged object exists (e.g. test scene).
+        Transform target = null;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+            target = player.transform;
+        else if (Camera.main != null)
+            target = Camera.main.transform;
+
+        PlayWindParticle(realWindParticle, target);
+        PlayWindParticle(fakeWindParticle, target);
+
+        if (realSpellParticle != null) realSpellParticle.Play();
+        if (fakeSpellParticle != null) fakeSpellParticle.Play();
+    }
+
+    void PlayWindParticle(ParticleSystem ps, Transform target) {
+        if (ps == null) return;
+        if (target != null) {
+            Vector3 dir = (target.position - ps.transform.position).normalized;
+            if (dir != Vector3.zero)
+                ps.transform.rotation = Quaternion.LookRotation(dir);
+        }
+        ps.Play();
+    }
+
+    void StopSpellEffect() {
+        if (realWindParticle != null) realWindParticle.Stop();
+        if (fakeWindParticle != null) fakeWindParticle.Stop();
+        if (realSpellParticle != null) realSpellParticle.Stop();
+        if (fakeSpellParticle != null) fakeSpellParticle.Stop();
     }
 
     // --- 基礎邏輯 ---
