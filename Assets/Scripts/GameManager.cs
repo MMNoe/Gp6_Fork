@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
@@ -7,12 +8,17 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [Header("音效設定")]
-    public AudioSource bgmSource; 
+    public AudioSource bgmSource;
     public List<AudioClip> sceneBGMs;
 
     [Header("玩家數值")]
     public int maxHealth = 30;
     public int currentHealth;
+
+    [Header("音叉自動裝備")]
+    public bool hasTuningFork = false;
+    public TuningForkBase tuningForkPrefab;
+    public TuningForkBase angelForkPrefab;
 
     [Header("場景設定")]
     public string playerTag = "Player";
@@ -54,6 +60,42 @@ public class GameManager : MonoBehaviour
             healthUI.UpdateHealthDisplay(currentHealth);
         }
         PlaySceneBGM(scene.buildIndex);
+
+        int idx = scene.buildIndex;
+        if (idx == 1 || idx == 2)
+            StartCoroutine(AutoEquipForksRoutine());
+    }
+
+    public void NotifyForkPickedUp() => hasTuningFork = true;
+
+    private IEnumerator AutoEquipForksRoutine()
+    {
+        yield return null; // wait one frame so all Start() methods have run
+
+        OVRGrabber leftGrabber = null, rightGrabber = null;
+        foreach (var g in FindObjectsOfType<OVRGrabber>())
+        {
+            if (g.gameObject.name.ToLower().Contains("right")) rightGrabber = g;
+            else leftGrabber = g;
+        }
+
+        if (leftGrabber == null || rightGrabber == null)
+        {
+            Debug.LogWarning("[GameManager] AutoEquip: OVRGrabber(s) not found.");
+            yield break;
+        }
+
+        if (hasTuningFork && tuningForkPrefab != null)
+        {
+            var fork = Instantiate(tuningForkPrefab);
+            fork.AutoAttach(rightGrabber);
+        }
+
+        if (angelForkPrefab != null)
+        {
+            var fork = Instantiate(angelForkPrefab);
+            fork.AutoAttach(leftGrabber);
+        }
     }
 
     void PlaySceneBGM(int index)

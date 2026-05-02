@@ -51,15 +51,20 @@ public class ItemTuningFork : TuningForkBase
         if (Time.time - _lastHitTime < hitCooldown) return;
         if (OVRInput.GetLocalControllerVelocity(HeldByController).magnitude < hitVelocityThreshold) return;
 
+        ChestInteractable     chest = other.GetComponentInParent<ChestInteractable>();
+        BioInstrument         bio   = other.GetComponentInParent<BioInstrument>();
+        GatePanelInteractable panel = other.GetComponentInParent<GatePanelInteractable>();
+
+        // Only react to chests, bio-instruments, and gate panels
+        if (chest == null && bio == null && panel == null) return;
+
         // Left hand (angel fork) cannot open chests
-        if (HeldByController == OVRInput.Controller.LTouch &&
-            other.GetComponentInParent<ChestInteractable>() != null) return;
+        if (HeldByController == OVRInput.Controller.LTouch && chest != null) return;
 
         _lastHitTime = Time.time;
         _audioSource.PlayOneShot(_audioSource.clip);
         StartCoroutine(HapticRoutine());
 
-        ChestInteractable chest = other.GetComponentInParent<ChestInteractable>();
         if (chest != null) chest.RegisterHit();
     }
 
@@ -68,5 +73,15 @@ public class ItemTuningFork : TuningForkBase
         OVRInput.SetControllerVibration(hapticFrequency, hapticAmplitude, HeldByController);
         yield return new WaitForSeconds(hapticDuration);
         OVRInput.SetControllerVibration(0f, 0f, HeldByController);
+    }
+
+    protected override void OnAttached(Transform anchor)
+    {
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 0
+            && CompareTag("fork")
+            && GameManager.Instance != null)
+        {
+            GameManager.Instance.NotifyForkPickedUp();
+        }
     }
 }

@@ -7332,6 +7332,9 @@ MonoBehaviour:
   sceneBGMs: []
   maxHealth: 3
   currentHealth: 0
+  hasTuningFork: 0
+  tuningForkPrefab: {fileID: 3362643437280174850, guid: 7788066c167158940bf7e553a23d1898, type: 3}
+  angelForkPrefab: {fileID: 2921526245338110785, guid: 48f0891f6531752478a37c77deddd25b, type: 3}
   playerTag: Player
   spawnPointTag: SceneSpawnPoint
 --- !u!65 &1996424653
