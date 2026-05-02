@@ -53,6 +53,31 @@ public class TuningForkBase : OVRGrabbable
         // _isAttached intentionally kept true — fork stays attached via LateUpdate after OVRGrabber releases it
     }
 
+    // Programmatically attach without requiring the player to physically grab.
+    // Used by GameManager to auto-equip forks at the start of Stage 2 and Stage 3.
+    public void AutoAttach(OVRGrabber hand)
+    {
+        if (_isAttached) return;
+        if (_rb == null) _rb = GetComponent<Rigidbody>();
+
+        OVRInput.Controller ctrl = hand.gameObject.name.ToLower().Contains("right")
+            ? OVRInput.Controller.RTouch
+            : OVRInput.Controller.LTouch;
+
+        _isAttached      = true;
+        _heldHand        = hand;
+        HeldByController = ctrl;
+
+        _rb.isKinematic = true;
+        _rb.useGravity  = false;
+
+        transform.SetParent(hand.transform, false);
+        transform.localPosition    = holdPositionOffset;
+        transform.localEulerAngles = holdRotationOffset;
+
+        OnAttached(hand.transform);
+    }
+
     // LateUpdate runs after OVRGrabber.Update, taking over position control in the same frame.
     void LateUpdate()
     {

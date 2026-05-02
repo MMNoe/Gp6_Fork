@@ -22,9 +22,10 @@ public class BioInstrument : MonoBehaviour
             }
 
             if (UrsulaBossManager.Instance != null)
-            {
                 UrsulaBossManager.Instance.RecordInstrumentHit(instrumentID);
-            }
+
+            if (GatePanelManager.Instance != null)
+                GatePanelManager.Instance.RecordInstrumentHit(instrumentID);
         }
     }
 }
