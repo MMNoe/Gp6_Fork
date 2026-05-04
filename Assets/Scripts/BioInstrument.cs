@@ -7,6 +7,10 @@ public class BioInstrument : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip hitSound;
 
+    [Header("Hit Cooldown")]
+    [SerializeField] private float hitCooldown = 1.0f;
+    private float _lastHitTime = -Mathf.Infinity;
+
     private void Start()
     {
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
@@ -14,6 +18,8 @@ public class BioInstrument : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (Time.time - _lastHitTime < hitCooldown) return;
+
         if (other.CompareTag("fork"))
         {
             if (audioSource != null && hitSound != null)

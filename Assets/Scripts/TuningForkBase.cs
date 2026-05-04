@@ -27,7 +27,14 @@ public class TuningForkBase : OVRGrabbable
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
-        if (_isAttached) return;
+        if (_isAttached)
+        {
+            // Fork is already auto-attached. Set OVR's internal state so
+            // OVRGrabber.MoveGrabbedObject() doesn't crash on null m_grabbedCollider.
+            m_grabbedBy = hand;
+            m_grabbedCollider = grabPoint;
+            return;
+        }
 
         OVRInput.Controller handController = hand.gameObject.name.ToLower().Contains("right")
             ? OVRInput.Controller.RTouch

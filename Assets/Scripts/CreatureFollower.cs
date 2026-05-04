@@ -7,7 +7,7 @@ public class CreatureFollower : MonoBehaviour
     [SerializeField] private bool  shouldFollow  = false;
     [SerializeField] private float moveSpeed     = 1.5f;
     [SerializeField] private float rotateSpeed   = 3f;
-    [SerializeField] private float followDistance = 1.2f;
+    [SerializeField] private float followDistance = 3.0f;
 
     [Header("Animation State Names")]
     [SerializeField] private string swimStateName = "Armature|swim";

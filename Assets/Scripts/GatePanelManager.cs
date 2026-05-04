@@ -17,9 +17,9 @@ public class GatePanelManager : MonoBehaviour
     [SerializeField] private List<int> correctSequence;
 
     [Header("Lineup Layout")]
-    [SerializeField] private float lineupDistance = 2.0f;
+    [Tooltip("樂器排列的中心錨點。設定後忽略 Distance/Height，直接用此 Transform 的位置和朝向。")]
+    [SerializeField] private Transform lineupAnchor;
     [SerializeField] private float lineupSpacing  = 0.8f;
-    [SerializeField] private float lineupHeight   = 0f;
 
     private readonly List<int> _playerSequence = new();
     private bool _lineupDone;
@@ -78,17 +78,26 @@ public class GatePanelManager : MonoBehaviour
 
     private void TriggerLineup(List<CreatureFollower> followers)
     {
-        Transform cam    = Camera.main != null ? Camera.main.transform : null;
-        Vector3   origin = cam != null ? cam.position : transform.position;
+        Vector3 rowCenter, forward, right;
 
-        Vector3 forward = cam != null
-            ? new Vector3(cam.forward.x, 0f, cam.forward.z).normalized
-            : Vector3.forward;
-        Vector3 right = new Vector3(forward.z, 0f, -forward.x);
+        if (lineupAnchor != null)
+        {
+            rowCenter = lineupAnchor.position;
+            forward   = new Vector3(lineupAnchor.forward.x, 0f, lineupAnchor.forward.z).normalized;
+        }
+        else
+        {
+            Transform cam = Camera.main != null ? Camera.main.transform : null;
+            Vector3 origin = cam != null ? cam.position : transform.position;
+            forward = cam != null
+                ? new Vector3(cam.forward.x, 0f, cam.forward.z).normalized
+                : Vector3.forward;
+            rowCenter = origin + forward * 1.0f;
+        }
 
-        Vector3 rowCenter  = origin + forward * lineupDistance + Vector3.up * lineupHeight;
-        float   totalWidth = (followers.Count - 1) * lineupSpacing;
+        right = new Vector3(forward.z, 0f, -forward.x);
 
+        float totalWidth = (followers.Count - 1) * lineupSpacing;
         for (int i = 0; i < followers.Count; i++)
         {
             float   offset    = -totalWidth / 2f + i * lineupSpacing;

@@ -85,13 +85,18 @@ public class GameManager : MonoBehaviour
             yield break;
         }
 
-        if (hasTuningFork && tuningForkPrefab != null)
+        int idx = SceneManager.GetActiveScene().buildIndex;
+
+        // Stage 2 & 3: right controller always auto-equipped with tuning fork
+        if (tuningForkPrefab != null)
         {
             var fork = Instantiate(tuningForkPrefab);
             fork.AutoAttach(rightGrabber);
         }
 
-        if (angelForkPrefab != null)
+        // Stage 3 only: left controller auto-equipped with angel fork
+        // In Stage 2, player must physically pick up the angel fork
+        if (idx == 2 && angelForkPrefab != null)
         {
             var fork = Instantiate(angelForkPrefab);
             fork.AutoAttach(leftGrabber);

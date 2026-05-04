@@ -58,8 +58,15 @@ public class ItemTuningFork : TuningForkBase
         // Only react to chests, bio-instruments, and gate panels
         if (chest == null && bio == null && panel == null) return;
 
-        // Left hand (angel fork) cannot open chests
-        if (HeldByController == OVRInput.Controller.LTouch && chest != null) return;
+        // Left hand (angel fork) gives sound feedback but cannot open chests
+        if (HeldByController == OVRInput.Controller.LTouch && chest != null)
+        {
+            _lastHitTime = Time.time;
+            _audioSource.PlayOneShot(_audioSource.clip);
+            chest.PlayHitSound();
+            StartCoroutine(HapticRoutine());
+            return;
+        }
 
         _lastHitTime = Time.time;
         _audioSource.PlayOneShot(_audioSource.clip);

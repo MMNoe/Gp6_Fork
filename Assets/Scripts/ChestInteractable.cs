@@ -4,10 +4,14 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(AudioSource))]
 public class ChestInteractable : MonoBehaviour
 {
     [Header("Hit Settings")]
     [SerializeField] private int hitsToOpen = 3;
+
+    [Header("Hit SFX")]
+    [SerializeField] private AudioClip hitSound;
 
     [Header("Creature Spawn")]
     [SerializeField] private GameObject[] creaturePrefabs;
@@ -15,12 +19,14 @@ public class ChestInteractable : MonoBehaviour
     [SerializeField] private float spawnDelay   = 0.8f; // seconds after open trigger before spawning
 
     private Animator _animator;
+    private AudioSource _audioSource;
     private int  _hitCount;
     private bool _opened;
 
     void Awake()
     {
-        _animator = GetComponent<Animator>();
+        _animator    = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
 
         // Kinematic triggers (the fork) cannot detect static colliders.
         // A non-kinematic, fully-frozen Rigidbody makes this a "Rigidbody Collider"
@@ -29,6 +35,12 @@ public class ChestInteractable : MonoBehaviour
         rb.isKinematic = false;
         rb.useGravity  = false;
         rb.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void PlayHitSound()
+    {
+        if (hitSound != null)
+            _audioSource.PlayOneShot(hitSound);
     }
 
     public void ForceOpen()
@@ -42,6 +54,7 @@ public class ChestInteractable : MonoBehaviour
     public void RegisterHit()
     {
         if (_opened) return;
+        PlayHitSound();
         _hitCount++;
         if (_hitCount >= hitsToOpen)
         {
