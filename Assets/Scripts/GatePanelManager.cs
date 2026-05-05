@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,19 @@ public class GatePanelManager : MonoBehaviour
     [Tooltip("BioInstrument ID 的順序，例如 [0,1,2,3]")]
     [SerializeField] private List<int> correctSequence;
 
+    [Header("Gate Glow")]
+    [SerializeField] private GameObject gateGlowing;
+    [SerializeField] private GameObject gateGlowing1;
+    [SerializeField] private float glowDuration = 1.5f;
+
+    [Header("Gate Panels")]
+    [SerializeField] private GameObject gatePanel;
+    [SerializeField] private GameObject gatePanel1;
+    [SerializeField] private Transform  gatePivot;
+    [SerializeField] private Transform  gatePivot1;
+    [SerializeField] private float      openDuration = 1.0f;
+    [SerializeField] private float      openAngle    = 90f;
+
     [Header("Lineup Layout")]
     [Tooltip("樂器排列的中心錨點。設定後忽略 Distance/Height，直接用此 Transform 的位置和朝向。")]
     [SerializeField] private Transform lineupAnchor;
@@ -24,11 +38,23 @@ public class GatePanelManager : MonoBehaviour
     private readonly List<int> _playerSequence = new();
     private bool _lineupDone;
     private bool _solved;
+    private Coroutine _glowCoroutine;
+    private Coroutine _glowCoroutine1;
 
     void Awake()
     {
         Instance = this;
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (gateGlowing  != null) gateGlowing.SetActive(false);
+        if (gateGlowing1 != null) gateGlowing1.SetActive(false);
+    }
+
+    void Start()
+    {
+        var followers = CreatureFollower.GetActiveFollowers();
+        if (followers.Count > 0)
+            TriggerLineup(followers);
+        _lineupDone = true;
     }
 
     void OnDestroy()
@@ -44,15 +70,8 @@ public class GatePanelManager : MonoBehaviour
         if (audioSource != null && demoClip != null)
             audioSource.PlayOneShot(demoClip);
 
-        if (!_lineupDone)
-        {
-            var followers = CreatureFollower.GetActiveFollowers();
-            if (followers.Count > 0)
-            {
-                _lineupDone = true;
-                TriggerLineup(followers);
-            }
-        }
+        TriggerGlow(gateGlowing,  ref _glowCoroutine);
+        TriggerGlow(gateGlowing1, ref _glowCoroutine1);
     }
 
     // Called by BioInstrument when player hits an instrument
@@ -106,13 +125,45 @@ public class GatePanelManager : MonoBehaviour
         }
     }
 
+    private void TriggerGlow(GameObject glowObj, ref Coroutine handle)
+    {
+        if (glowObj == null) return;
+        if (handle != null) StopCoroutine(handle);
+        handle = StartCoroutine(GlowOnce(glowObj));
+    }
+
+    private IEnumerator GlowOnce(GameObject glowObj)
+    {
+        glowObj.SetActive(true);
+        if (glowObj.TryGetComponent<ParticleSystem>(out var ps)) ps.Play();
+        yield return new WaitForSeconds(glowDuration);
+        glowObj.SetActive(false);
+    }
+
     private void OpenGate()
     {
+        if (gatePivot  != null) StartCoroutine(RotateGate(gatePivot,  +openAngle));
+        if (gatePivot1 != null) StartCoroutine(RotateGate(gatePivot1, -openAngle));
+
         if (gate == null) return;
         Animator anim = gate.GetComponent<Animator>();
         if (anim != null)
             anim.SetTrigger("Open");
         else
             gate.SetActive(false);
+    }
+
+    private IEnumerator RotateGate(Transform pivot, float angleDegrees)
+    {
+        Quaternion startRot = pivot.localRotation;
+        Quaternion endRot   = startRot * Quaternion.Euler(0f, angleDegrees, 0f);
+        float elapsed = 0f;
+        while (elapsed < openDuration)
+        {
+            elapsed += Time.deltaTime;
+            pivot.localRotation = Quaternion.Slerp(startRot, endRot, elapsed / openDuration);
+            yield return null;
+        }
+        pivot.localRotation = endRot;
     }
 }

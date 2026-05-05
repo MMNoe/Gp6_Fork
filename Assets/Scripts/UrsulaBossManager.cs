@@ -111,7 +111,9 @@ public class UrsulaBossManager : MonoBehaviour
             }
             bossAudioSource.Stop();
 
-            // State 2: 烏蘇拉冷卻 
+            if (bossHP <= 0) break; // 防禦成功扣完血 → 直接進勝利序列
+
+            // State 2: 烏蘇拉冷卻
             isCooldown = true;
             Debug.Log("烏蘇拉冷卻中，玩家可以辨認或攻擊");
             
@@ -264,7 +266,8 @@ public class UrsulaBossManager : MonoBehaviour
 
     void DefenseSuccess() {
         isDefenseWindow = false;
-        Debug.Log("成功防禦！");
+        bossHP--;
+        Debug.Log("成功防禦！Boss HP 剩：" + bossHP);
     }
 
     void DefenseFailed() {
@@ -293,7 +296,10 @@ public class UrsulaBossManager : MonoBehaviour
             Debug.Log("籠子已打開！");
         }
 
-        if (princeFish != null && princeHuman != null) {
+        Debug.Log($"[Victory] princeFish={(princeFish == null ? "NULL" : princeFish.name)}, princeHuman={(princeHuman == null ? "NULL" : princeHuman.name)}");
+        if (princeFish != null ) {
+            Debug.Log("有魚！");
+            if ( princeHuman != null){
         
             yield return new WaitForSeconds(0.5f); 
             
@@ -301,6 +307,7 @@ public class UrsulaBossManager : MonoBehaviour
             princeHuman.SetActive(true); 
             
             Debug.Log("王子變回人類了！");
+            }
         }
 
         yield return new WaitForSeconds(1.0f);
@@ -312,11 +319,8 @@ public class UrsulaBossManager : MonoBehaviour
         }
 
    
-        Animator humanAnim = princeHuman.GetComponent<Animator>();
-        if (humanAnim != null) {
-            humanAnim.SetTrigger("doKiss");
-        }
-    }   
+        princeHuman?.GetComponent<Animator>()?.SetTrigger("doKiss");
+    }
 
     IEnumerator RotateTowardsPlayer(GameObject actor, Transform target) {
         float duration = 1.0f;
