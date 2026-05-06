@@ -14,6 +14,7 @@ public class OctopusController : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip changeColorSound;
 
     [Header("VFX")]
     [SerializeField] private ParticleSystem hitParticle;
@@ -67,6 +68,9 @@ public class OctopusController : MonoBehaviour
     {
         foreach (Renderer r in GetComponentsInChildren<Renderer>())
             r.material.color = hitColor;
+
+        if (_audio != null && changeColorSound != null)
+            _audio.PlayOneShot(changeColorSound);
 
         if (octopusType == OctopusType.Follower)
             _follower.ShouldFollow = true;
