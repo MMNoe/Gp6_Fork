@@ -319,7 +319,7 @@ public class UrsulaBossManager : MonoBehaviour
         }
 
    
-        princeHuman?.GetComponent<Animator>()?.SetTrigger("doKiss");
+        princeHuman?.GetComponent<Animator>()?.SetTrigger(princeKissTrigger);
     }
 
     IEnumerator RotateTowardsPlayer(GameObject actor, Transform target) {
