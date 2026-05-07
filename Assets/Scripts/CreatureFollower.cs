@@ -7,7 +7,7 @@ public class CreatureFollower : MonoBehaviour
     [SerializeField] private bool  shouldFollow  = false;
     [SerializeField] private float moveSpeed     = 1.5f;
     [SerializeField] private float rotateSpeed   = 3f;
-    [SerializeField] private float followDistance = 3.0f;
+    [SerializeField] private float followDistance = 1.0f;
 
     [Header("Animation State Names")]
     [SerializeField] private string swimStateName = "Armature|swim";
@@ -20,6 +20,13 @@ public class CreatureFollower : MonoBehaviour
     [Header("Separation")]
     [SerializeField] private float separationRadius = 0.8f;
     [SerializeField] private float separationForce  = 3f;
+
+    // Formation follow (stage 3)
+    private bool  _formationFollow;
+    private int   _formationSlot;
+    private int   _formationTotal;
+    private float _formationForwardDist;
+    private float _formationSpacing;
 
     // Shared registry — no FindObjectsOfType needed every frame
     private static readonly List<CreatureFollower> _all = new();
@@ -49,6 +56,16 @@ public class CreatureFollower : MonoBehaviour
         set => shouldFollow = value;
     }
 
+    public void SetFormationFollow(int slot, int total, float forwardDist, float spacing)
+    {
+        _formationSlot        = slot;
+        _formationTotal       = total;
+        _formationForwardDist = forwardDist;
+        _formationSpacing     = spacing;
+        _formationFollow      = true;
+        shouldFollow          = false;
+    }
+
     void OnEnable()  => _all.Add(this);
     void OnDisable() => _all.Remove(this);
 
@@ -70,7 +87,9 @@ public class CreatureFollower : MonoBehaviour
             _animator.Play(swimStateName);
         }
 
-        if (_liningUp)
+        if (_formationFollow)
+            FollowFormation();
+        else if (_liningUp)
             MoveToLineup();
         else if (shouldFollow)
             Follow();
@@ -107,6 +126,28 @@ public class CreatureFollower : MonoBehaviour
         Vector3 dir = target - transform.position;
         if (dir.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 2f * Time.deltaTime);
+    }
+
+    private void FollowFormation()
+    {
+        if (_player == null) return;
+
+        Vector3 forward = new Vector3(_player.forward.x, 0f, _player.forward.z).normalized;
+        if (forward.sqrMagnitude < 0.001f) return;
+
+        Vector3 right = new Vector3(forward.z, 0f, -forward.x);
+
+        float totalWidth    = (_formationTotal - 1) * _formationSpacing;
+        float lateralOffset = -totalWidth / 2f + _formationSlot * _formationSpacing;
+
+        Vector3 target = new Vector3(_player.position.x, transform.position.y, _player.position.z)
+                         + forward * _formationForwardDist
+                         + right   * lateralOffset;
+
+        transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+
+        Quaternion targetRot = Quaternion.LookRotation(forward);
+        transform.rotation   = Quaternion.Slerp(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
     }
 
     public void LineUpAt(Vector3 targetPos, Vector3 facingDir)

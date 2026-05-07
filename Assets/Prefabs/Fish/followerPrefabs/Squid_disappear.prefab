@@ -113,7 +113,8 @@ MonoBehaviour:
   hitColor: {r: 1, g: 0.3712367, b: 0.19999999, a: 1}
   disappearDelay: 1.2
   shrinkDuration: 0.4
-  hitSound: {fileID: 8300000, guid: e26192ed1bc0eba46badd3c87db133d3, type: 3}
+  hitSound: {fileID: 8300000, guid: fb94a845f691e0d41a3e0db831515a1c, type: 3}
+  changeColorSound: {fileID: 8300000, guid: 08705065af3d1be4abcd82b761a90ea5, type: 3}
   hitParticle: {fileID: 0}
 --- !u!65 &561897819014076194
 BoxCollider:

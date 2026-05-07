@@ -17,9 +17,6 @@ public class BioInstrument : MonoBehaviour
     {
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
         _follower = GetComponent<CreatureFollower>();
-        // Stage 3: auto-follow the player when UrsulaBossManager is present
-        if (_follower != null && UrsulaBossManager.Instance != null)
-            _follower.ShouldFollow = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,15 +27,12 @@ public class BioInstrument : MonoBehaviour
         {
             bool isBossFight = UrsulaBossManager.Instance != null;
 
-            // Stage 3: silent outside Ursula's singing window
-            if (isBossFight && !UrsulaBossManager.Instance.isDefenseWindow) return;
-
             _lastHitTime = Time.time;
 
             if (audioSource != null && hitSound != null)
                 audioSource.PlayOneShot(hitSound);
 
-            if (isBossFight)
+            if (isBossFight && UrsulaBossManager.Instance.isDefenseWindow)
                 UrsulaBossManager.Instance.RecordInstrumentHit(instrumentID);
 
             if (GatePanelManager.Instance != null)

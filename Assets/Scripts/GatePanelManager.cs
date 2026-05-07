@@ -28,7 +28,8 @@ public class GatePanelManager : MonoBehaviour
     [SerializeField] private Transform  gatePivot;
     [SerializeField] private Transform  gatePivot1;
     [SerializeField] private float      openDuration = 1.0f;
-    [SerializeField] private float      openAngle    = 90f;
+    [SerializeField] private float      openAngle    = -35f;
+    [SerializeField] private float      openAngle1   = 330f;
 
     [Header("Lineup Layout")]
     [Tooltip("樂器排列的中心錨點。設定後忽略 Distance/Height，直接用此 Transform 的位置和朝向。")]
@@ -65,6 +66,7 @@ public class GatePanelManager : MonoBehaviour
     // Called by GatePanelInteractable when player hits a gate panel
     public void OnPanelHit()
     {
+        Debug.Log("門被打了");
         if (_solved) return;
 
         if (audioSource != null && demoClip != null)
@@ -72,6 +74,13 @@ public class GatePanelManager : MonoBehaviour
 
         TriggerGlow(gateGlowing,  ref _glowCoroutine);
         TriggerGlow(gateGlowing1, ref _glowCoroutine1);
+
+        var followers = CreatureFollower.GetActiveFollowers();
+        if (followers.Count > 0)
+        {
+            foreach (var f in followers) f.ShouldFollow = false;
+            TriggerLineup(followers);
+        }
     }
 
     // Called by BioInstrument when player hits an instrument
@@ -142,21 +151,27 @@ public class GatePanelManager : MonoBehaviour
 
     private void OpenGate()
     {
-        if (gatePivot  != null) StartCoroutine(RotateGate(gatePivot,  +openAngle));
-        if (gatePivot1 != null) StartCoroutine(RotateGate(gatePivot1, -openAngle));
+        if (gatePivot  != null) StartCoroutine(RotateGate(gatePivot,  openAngle));
+        if (gatePivot1 != null) StartCoroutine(RotateGate(gatePivot1, openAngle1));
 
-        if (gate == null) return;
-        Animator anim = gate.GetComponent<Animator>();
-        if (anim != null)
-            anim.SetTrigger("Open");
-        else
-            gate.SetActive(false);
+        TriggerPanelOpen(gatePanel);
+        TriggerPanelOpen(gatePanel1);
     }
 
-    private IEnumerator RotateGate(Transform pivot, float angleDegrees)
+    private void TriggerPanelOpen(GameObject panel)
+    {
+        if (panel == null) return;
+        if (panel.TryGetComponent<Animator>(out var anim))
+            anim.SetTrigger("Open");
+        else
+            panel.SetActive(false);
+    }
+
+    private IEnumerator RotateGate(Transform pivot, float targetLocalY)
     {
         Quaternion startRot = pivot.localRotation;
-        Quaternion endRot   = startRot * Quaternion.Euler(0f, angleDegrees, 0f);
+        Vector3    euler    = startRot.eulerAngles;
+        Quaternion endRot   = Quaternion.Euler(euler.x, targetLocalY, euler.z);
         float elapsed = 0f;
         while (elapsed < openDuration)
         {

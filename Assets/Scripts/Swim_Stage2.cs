@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class SwimmingLocomotion : MonoBehaviour
+public class Swim_Stage2 : MonoBehaviour
 {
     [SerializeField] private OVRCameraRig cameraRig;
     [SerializeField] private float swimForce = 3f;
@@ -11,7 +11,7 @@ public class SwimmingLocomotion : MonoBehaviour
     [Header("Swimming SFX")]
     [SerializeField] private AudioClip[] swimSounds;
     [SerializeField] private float stopVelocityThreshold = 0.05f;
-
+    
     [Header("高度限制設定")]
     public float minHeight = -5.0f;
 
@@ -73,6 +73,7 @@ public class SwimmingLocomotion : MonoBehaviour
         _velocity = Vector3.Lerp(_velocity, Vector3.zero, drag * Time.deltaTime);
 
         transform.position += _velocity * Time.deltaTime;
+
         if (transform.position.y < minHeight)
         {
             // 強制將 Y 座標拉回最低限制
