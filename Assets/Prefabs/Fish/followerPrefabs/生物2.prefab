@@ -231,9 +231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b70c600bd271a144afe43e6e385b27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentID: 1
+  instrumentID: 2
   audioSource: {fileID: 6904311967418211388}
-  hitSound: {fileID: 8300000, guid: a6c81a89d6503104997ecd71ee8ee525, type: 3}
+  hitSound: {fileID: 8300000, guid: d5ea7448a986d9c4a89dbc6046297896, type: 3}
   hitCooldown: 1
 --- !u!54 &362008616363283946
 Rigidbody:

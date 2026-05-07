@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -47,6 +59,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3180019366cdd4e1192b5cdf26b08d84, type: 3}
       propertyPath: m_Name
@@ -231,9 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b70c600bd271a144afe43e6e385b27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instrumentID: 2
+  instrumentID: 3
   audioSource: {fileID: 3593898095979541782}
-  hitSound: {fileID: 8300000, guid: 6ae36ee6d51d83d4e95fab65f2cbe00f, type: 3}
+  hitSound: {fileID: 8300000, guid: 4017fa078b5f95c468eb05b29ae808b3, type: 3}
   hitCooldown: 1
 --- !u!54 &6948838790309322668
 Rigidbody:
